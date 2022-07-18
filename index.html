@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      width: 100%;
+      font-size: 11px; 
+      text-align: center; 
+    }
+    .attribution a { 
+      color: hsl(228, 45%, 44%);
+    }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: hsl(212, 45%, 89%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    body p {
+      font-size: 15px;
+    }
+    .card {
+      margin: 20px;
+      background: hsl(0, 0%, 100%);
+      padding: 15px;
+      border-radius: 20px;
+    }
+    .img-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .card-text {
+      padding: 10px;
+    }
+    .fixed-bottom {
+      position: fixed;
+      bottom: 20px;
+    }
+    .text-gray {
+      color: gray;
+    }
+    .text-center {
+      text-align: center;
+    }
+    
+    @media only screen and (min-width: 375px) {
+      .card {
+        width: 375px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="card">
+  <div class="img-card">
+    <img src="images/image-qr-code.png">
+  </div>
+  <div class="card-text">
+    <h3 class="text-center">
+    Improve your front-end skills by building projects
+    </h3>
+    <p class="text-gray text-center">
+    Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+    </p>
+  </div>
+</div>
+  <div class="attribution fixed-bottom">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/ricko-v">ricko-v</a>.
+  </div>
+</body>
+</html>
